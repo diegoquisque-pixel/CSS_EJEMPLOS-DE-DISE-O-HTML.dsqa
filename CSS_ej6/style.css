@@ -1,0 +1,48 @@
+/* DSQA */
+/* Proyecto: Teclas de Piano con HTML y CSS */
+/* Archivo: style.css (diseño y apariencia de la página) */
+
+
+/* ========== ESTILOS GENERALES DE LA PÁGINA ========== */
+body {
+    display: flex;               /* Usa Flexbox para centrar */
+    justify-content: center;     /* Centrado horizontal */
+    align-items: center;         /* Centrado vertical */
+    height: 100vh;               /* 100% del alto de la ventana */
+    margin: 0;                   /* Sin margen */
+    background: #f0fff0;         /* Color de fondo verde claro */
+}
+
+
+/* ========== CONTENEDOR DEL PIANO ========== */
+.piano {
+    position: relative;          /* Permite posicionar las teclas negras dentro del piano */
+    display: flex;               /* Coloca las teclas blancas en fila */
+}
+
+
+/* ========== ESTILO DE LAS TECLAS BLANCAS ========== */
+.white {
+    width: 60px;                 /* Ancho de cada tecla blanca */
+    height: 150px;               /* Alto de cada tecla blanca */
+    border: 1px solid #ccc;      /* Borde gris */
+    background: white;           /* Fondo blanco */
+}
+
+
+/* ========== ESTILO DE LAS TECLAS NEGRAS ========== */
+.black {
+    width: 40px;                 /* Ancho de la tecla negra */
+    height: 90px;                /* Alto de la tecla negra */
+    background: black;           /* Fondo negro */
+    position: absolute;          /* Posición absoluta para superponerla sobre las blancas */
+    z-index: 2;                  /* Se muestra encima de las teclas blancas */
+}
+
+
+/* ========== POSICIÓN DE LA TECLA NEGRA IZQUIERDA ========== */
+.b1 { left: 40px; }              /* Se ubica sobre la primera y segunda tecla blanca */
+
+
+/* ========== POSICIÓN DE LA TECLA NEGRA DERECHA ========== */
+.b2 { left: 100px; }             /* Se ubica sobre la segunda y tercera tecla blanca */

@@ -1,0 +1,58 @@
+/* DSQA - Estilos Cover Musical | Autor: DSQA | 2026 */
+
+/* Body: Centra todo el contenido en medio de la pantalla */
+body {
+  display: flex;                /* Activa Flexbox */
+  justify-content: center;      /* Centrado horizontal */
+  align-items: center;          /* Centrado vertical */
+  height: 100vh;                /* Ocupa toda la altura de la ventana */
+  background: #fefefe;          /* Fondo blanco suave */
+  font-family: sans-serif;      /* Fuente moderna sin serifa */
+}
+
+/* .cover: La tarjeta principal con degradado y sombra */
+.cover {
+  width: 300px;                 /* Ancho fijo */
+  height: 380px;                /* Alto fijo */
+  
+  /* Degradado diagonal de 3 colores cálidos */
+  background: linear-gradient(45deg, #f19a9e 0%, #fddc4c 60%, #fadbc4 100%);
+  
+  border-radius: 20px;          /* Bordes redondeados */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Sombra profunda */
+  
+  position: relative;           /* Referencia para posicionar el círculo */
+  overflow: hidden;             /* Recorta lo que salga de la tarjeta */
+  
+  display: flex;                /* Flexbox interno */
+  flex-direction: column;       /* Elementos uno debajo del otro */
+  justify-content: flex-end;    /* Empuja el texto hacia abajo */
+  
+  padding: 20px;                /* Espacio interno */
+  color: white;                 /* Texto blanco */
+}
+
+/* .circle: Círculo decorativo semitransparente */
+.circle {
+  position: absolute;           /* Flota libremente dentro de .cover */
+  top: -50px;                   /* Sube hacia arriba (sale un poco) */
+  right: -50px;                 /* Se mueve a la derecha (sale un poco) */
+  width: 200px;                 /* Tamaño */
+  height: 200px;                /* Alto igual al ancho */
+  background: rgba(255, 255, 255, 0.2); /* Blanco transparente (efecto luz) */
+  border-radius: 50%;           /* Lo convierte en círculo perfecto */
+}
+
+/* h2: Título principal */
+h2 {
+  margin: 0;                    /* Sin márgenes extra */
+  font-size: 2em;               /* Letra grande */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave para leer mejor */
+}
+
+/* p: Subtítulo secundario */
+p {
+  margin: 5px 0;                /* Poco espacio arriba y abajo */
+  font-size: 14px;              /* Letra pequeña */
+  opacity: 0.9;                 /* Ligeramente transparente */
+}

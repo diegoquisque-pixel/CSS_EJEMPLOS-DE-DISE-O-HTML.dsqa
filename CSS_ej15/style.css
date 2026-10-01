@@ -1,0 +1,53 @@
+/* DSQA - Estilos Nav Bar | Autor: DSQA | 2026 */
+
+/* Body: Reseteo básico */
+body {
+  margin: 0;                    /* Sin márgenes */
+  font-family: sans-serif;      /* Fuente limpia */
+}
+
+/* nav: Contenedor principal amarillo */
+nav {
+  background: #fbc02d;          /* Amarillo mostaza */
+  display: flex;                /* Flexbox para alinear logo y links */
+  justify-content: space-between; /* Separa logo a la izq y links a la der */
+  align-items: center;          /* Centrado vertical */
+  padding: 15px 20px;           /* Espaciado interno */
+}
+
+/* .logo: Estilo del nombre del sitio */
+.logo {
+  color: #333;                  /* Texto oscuro */
+  font-weight: bold;            /* Negrita */
+  text-decoration: none;        /* Sin subrayado */
+}
+
+/* .links: Contenedor de la lista */
+.links {
+  list-style: none;             /* Quita los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex;                /* Alinea los items horizontalmente */
+  gap: 15px;                    /* Espacio entre cada enlace */
+}
+
+/* .links a: Estilo de los enlaces individuales */
+.links a {
+  color: #333;                  /* Texto oscuro */
+  text-decoration: none;        /* Sin subrayado */
+  font-weight: bold;            /* Negrita */
+}
+
+/* MEDIA QUERY: Cambios para pantallas menores a 600px (Móviles) */
+@media (max-width: 600px) {
+  
+  nav {
+    flex-direction: column;     /* Apila logo y menú verticalmente */
+    gap: 10px;                  /* Espacio entre logo y menú */
+  }
+
+  .links {
+    flex-direction: column;     /* Enlaces uno debajo del otro */
+    text-align: center;         /* Texto centrado */
+  }
+}

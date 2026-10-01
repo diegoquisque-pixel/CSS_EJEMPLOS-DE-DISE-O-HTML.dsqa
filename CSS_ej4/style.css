@@ -1,0 +1,38 @@
+/* DSQA */
+/* Proyecto: Texto R&B con HTML y CSS */
+/* Archivo: style.css (diseño y apariencia de la página) */
+
+
+/* ========== ESTILOS GENERALES DEL CUERPO DE LA PÁGINA ========== */
+body {
+    display: flex;               /* Usa Flexbox para centrar el contenido */
+    justify-content: center;     /* Centrado horizontal */
+    align-items: center;         /* Centrado vertical */
+    height: 100vh;               /* 100% del alto de la ventana del navegador */
+    background: #ffffff;         /* Color de fondo blanco */
+    margin: 0;                   /* Elimina los márgenes por defecto del navegador */
+    font-family: 'Georgia', 'Times New Roman', serif;  /* Tipo de letra con serifas */
+}
+
+
+/* ========== ESTILO DEL TEXTO R&B ========== */
+.rnb-text {
+    font-size: 90px;             /* Tamaño grande del texto */
+    font-weight: bold;           /* Texto en negrita */
+    text-transform: uppercase;   /* Convierte el texto a mayúsculas */
+    letter-spacing: -2px;        /* Espacio entre letras (negativo = más juntas) */
+    margin: 0;                   /* Sin margen */
+
+    /* Degradado de color en el texto: morado a amarillo */
+    background: linear-gradient(135deg, #240046 0%, #7b2cbf 50%, #ffd700 100%);
+
+    /* Recorta el fondo para que solo se vea dentro de las letras */
+    -webkit-background-clip: text;   /* Versión para navegadores WebKit (Chrome, Safari) */
+    background-clip: text;           /* Propiedad estándar */
+
+    /* Hace transparente el color del texto para que se vea el degradado */
+    color: transparent;
+
+    /* Sombra para dar profundidad */
+    filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.11));
+}

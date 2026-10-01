@@ -1,0 +1,87 @@
+ /* DSQA - Estilos Neumorphism | Autor: DSQA | 2026 */
+
+/* Body: Fondo base para el efecto neumórfico */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif; /* Fuente moderna */
+  background-color: #e0e5ec;           /* Gris azulado claro (base del efecto) */
+}
+
+/* nav: Contenedor principal flotante */
+nav {
+  background: #e0e5ec;                 /* Mismo color que el fondo body */
+  display: flex;                       /* Alinea logo y links */
+  justify-content: space-between;      /* Separa extremos */
+  align-items: center;                 /* Centrado vertical */
+  padding: 20px;                       /* Espaciado interno */
+  
+  /* Sombra externa suave (Efecto relieve) */
+  box-shadow: 0 10px 20px rgba(163,177,198,0.4);
+  margin-bottom: 20px;                 /* Espacio abajo */
+}
+
+/* .logo: Estilo del nombre */
+.logo {
+  color: #4d4d4d;                      /* Gris oscuro */
+  font-weight: 800;                    /* Muy negrita */
+  text-decoration: none;               /* Sin subrayado */
+  font-size: 1.2rem;                   /* Tamaño mediano */
+  padding: 10px 20px;                  /* Espaciado interno */
+  border-radius: 12px;                 /* Bordes redondeados */
+  
+  /* Sombra neumórfica externa (Relieve hacia afuera) */
+  box-shadow: 5px 5px 10px #b8b9be, 
+             -5px -5px 10px #ffffff;
+}
+
+/* .links: Contenedor de la lista */
+.links {
+  list-style: none;                    /* Quita viñetas */
+  margin: 0;
+  padding: 0;
+  display: flex;                       /* Enlaces en fila */
+  gap: 20px;                           /* Espacio entre ellos */
+}
+
+/* .links li a: Estilo de los botones/enlaces */
+.links li a {
+  color: #4d4d4d;                      /* Texto gris */
+  text-decoration: none;               /* Sin subrayado */
+  font-weight: 600;                    /* Negrita suave */
+  padding: 10px 20px;                  /* Tamaño del botón */
+  border-radius: 10px;                 /* Bordes redondeados */
+  transition: all 0.3s ease;           /* Animación suave */
+  
+  /* Sombra neumórfica externa (Relieve) */
+  box-shadow: 5px 5px 10px #b8b9be, 
+             -5px -5px 10px #ffffff;
+}
+
+/* Hover: Efecto al pasar el mouse (Se hunde) */
+.links li a:hover {
+  color: #007bff;                      /* Cambia a azul */
+  
+  /* Sombra interna (Inset) para simular hundimiento */
+  box-shadow: inset 5px 5px 10px #b8b9be, 
+              inset -5px -5px 10px #ffffff;
+}
+
+/* MEDIA QUERY: Adaptación a móviles (< 600px) */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;            /* Apila logo y menú */
+    gap: 20px;                         /* Espacio entre elementos */
+    box-shadow: none;                  /* Quita sombra en móvil */
+  }
+
+  .links {
+    flex-direction: column;            /* Lista vertical */
+    width: 100%;                       /* Ancho completo */
+    text-align: center;                /* Texto centrado */
+    gap: 15px;                         /* Espacio entre items */
+  }
+
+  .links li a {
+    display: block;                    /* Ocupa toda la línea */
+  }
+}

@@ -1,0 +1,85 @@
+/* Estilos generales de la página */
+body {
+    font-family: 'Segoe UI', sans-serif; /* Tipo de fuente */
+    background-color: #e6dfff;           /* Color de fondo (lila suave) */
+    display: flex;                       /* Usa Flexbox */
+    justify-content: center;             /* Centra horizontalmente */
+    align-items: center;                 /* Centra verticalmente */
+    height: 100vh;                       /* Ocupa toda la altura */
+    margin: 0;                           /* Elimina márgenes */
+}
+
+/* Estilo de la tarjeta (card) */
+.card {
+    width: 300px;                        /* Ancho de la tarjeta */
+    padding: 40px;                       /* Espaciado interno */
+    border-radius: 30px;                 /* Esquinas redondeadas */
+    background: #e6dfff;                 /* Color de fondo igual al body */
+    
+    /* Sombras neumórficas (Luz arriba-izq, Sombra abajo-der) */
+    box-shadow: 9px 9px 16px rgba(179, 157, 219, 0.6), 
+               -9px -9px 16px rgba(255, 255, 255, 0.8);
+               
+    text-align: center;                  /* Centra el contenido */
+}
+
+/* Estilo del título */
+h2 {
+    color: #4a148c;                      /* Color del texto (morado oscuro) */
+    margin-bottom: 30px;                 /* Espacio inferior */
+    font-weight: 600;                    /* Grosor de la letra */
+    letter-spacing: 1px;                 /* Espaciado entre letras */
+}
+
+/* Estilo de los campos de entrada */
+input {
+    width: 100%;                         /* Ancho completo */
+    padding: 15px;                       /* Espaciado interno */
+    margin-bottom: 20px;                 /* Espacio inferior */
+    border: none;                        /* Sin borde */
+    border-radius: 10px;                 /* Esquinas redondeadas */
+    background: #e6dfff;                 /* Color de fondo */
+    color: #4a148c;                      /* Color del texto */
+    box-sizing: border-box;              /* Incluye padding en el tamaño */
+    
+    /* Sombra interna para efecto "hundido" */
+    box-shadow: inset 6px 6px 12px #c5b3e6, 
+                inset -6px -6px 12px #ffffff;
+                
+    outline: none;                       /* Sin contorno al enfocar */
+}
+
+/* Color del texto de placeholder */
+input::placeholder {
+    color: #9575cd;                      /* Color del texto de sugerencia */
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;                         /* Ancho completo */
+    padding: 15px;                       /* Espaciado interno */
+    margin-top: 10px;                    /* Espacio superior */
+    border: none;                        /* Sin borde */
+    border-radius: 50px;                 /* Esquinas muy redondeadas (píldora) */
+    background: #e6dfff;                 /* Color de fondo */
+    color: #4a148c;                      /* Color del texto */
+    font-weight: bold;                   /* Texto en negrita */
+    cursor: pointer;                     /* Cursor de mano */
+    
+    /* Sombras neumórficas externas */
+    box-shadow: 6px 6px 12px #c5b3e6, 
+               -6px -6px 12px #ffffff;
+               
+    transition: all 0.2s ease;           /* Transición suave */
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    color: #651fff;                      /* Color del texto al pasar el mouse */
+}
+
+/* Efecto al hacer clic (se hunde) */
+button:active {
+    box-shadow: inset 4px 4px 8px #c5b3e6, 
+                inset -4px -4px 8px #ffffff; /* Sombra interna */
+}

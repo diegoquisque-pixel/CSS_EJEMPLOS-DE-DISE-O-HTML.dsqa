@@ -1,0 +1,39 @@
+/* DSQA */
+/* Proyecto: Texto Estilo Pop Music con HTML y CSS */
+/* Archivo: style.css (diseño y apariencia de la página) */
+
+
+/* ========== ESTILOS GENERALES DE LA PÁGINA ========== */
+body {
+    display: flex;                          /* Usa Flexbox para centrar */
+    justify-content: center;                /* Centra horizontalmente */
+    align-items: center;                    /* Centra verticalmente */
+    height: 100vh;                          /* Alto de toda la ventana */
+    background: #111;                       /* Color de fondo oscuro */
+    margin: 0;                              /* Sin margen */
+    font-family: 'Arial Black', sans-serif; /* Tipo de letra gruesa */
+}
+
+
+/* ========== ESTILO DEL TEXTO CON EFECTO POP ========== */
+.pop-text {
+    font-size: 80px;             /* Tamaño del texto */
+    font-weight: 900;            /* Negrita máxima */
+    text-transform: uppercase;   /* Convierte las letras a mayúsculas */
+
+    /* Degradado de colores (rosa a azul) */
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+
+    /* Aplica el degradado solo dentro del texto */
+    -webkit-background-clip: text;   /* Versión para navegadores WebKit (Chrome, Edge, Safari) */
+    background-clip: text;           /* Propiedad estándar */
+
+    /* Hace el texto transparente para que se vea el degradado */
+    color: transparent;
+
+    /* Sombra brillante alrededor de las letras */
+    filter: drop-shadow(0 0 15px rgba(255, 0, 204, 0.5));
+
+    letter-spacing: -2px;        /* Espacio entre letras (negativo = más juntas) */
+    margin: 0;                   /* Sin margen */
+}

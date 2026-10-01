@@ -1,0 +1,207 @@
+/*Selector Universal selecciona todos los elementos de HTML de la pagina*/
+*{
+    /* Elimina los margenes externos predeterminados*/
+    margin: 0;
+    /* Elimina los espacios internos predeterminados*/
+    padding: 0;
+}
+
+.main{
+    /* Hace que el contenedor ocupe el 100% de ancho disponible*/
+    width: 100%;
+    /* Coloca la imagen como fondo y agrega encima una capa negra semitransparente*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(CR.png);
+    /* Centra la imagen utilizada como fondo*/
+    background-position: center;
+    /* Logra que el contenedor tenga el 100 visible*/
+    height: 100vh;
+    /* Hace que la imagen cubra completamente el contenedor aunque tenga */
+    background-size: cover;
+    /* Establece una fuente sin serifas para el contenido del contenedor*/
+    font-family: sans-serif;
+}
+
+.navbar{
+    /* Hace que la barra utilice el 95% del ancho disponible*/
+    width: 95%;
+    /* Permite que el navegador calcule autometicamente la altura necesaria*/
+    height: auto;
+    /* Separa la barra de navegacion a 30px del lado izquierdo*/
+    margin-left: 30px;
+}
+
+.logo {
+    /* Cambia el color del texto del logotipo a naranja*/
+    color: orange;
+    /* Cambia el tamaño del texto*/
+    font-size: 40px;
+    /* Utiliza una fuente de tipo cursiva*/
+    font-family: cursive;
+    /* Desplaza el logotipo hacia el lado izquierdo*/
+    float: left;
+    /* Cambia el cursor a una mano al momento de desplazarse sobre el logotipo*/
+    cursor: pointer;
+    /* Agrega un pequeño espacio interno en la parte superior*/
+    padding-top: .6%;
+}
+
+.menu {
+    /*Establece un ancho fijo de 600 pixeles para el menu*/
+    width: 600px;
+    /*coloca el menu flotando al lado izquierdo*/
+    float: left;
+    /*Establece una altura de 70 pixeles*/
+    height: 70px;
+}
+
+ul{
+    /*Desplaza la lista hacia la izquierda*/
+    float: left;
+    /*Activa el Flexbox para organizar los elementos de la lista de forma flexible*/
+    display: flex;
+    /*Agrega 30 pixeles de espacio interno en la parte superior*/
+    padding-top: 30px;
+    /*Centra los elementos sobre el eje principal de flexbox*/
+    justify-content: center;
+    /*Alinea los elementos sobre el eje secundario de flexbox*/
+    align-items: center;
+    /*Separa la lista de 14 pixeles del lado izquierdo*/
+    margin-left: 14px;
+}
+
+ul li{
+    /* Eliminar las viñetas*/
+    list-style: none;
+    /*Agrega 60 pixeles de separacion a la izquierda de cada elemento*/
+    margin-left: 60px;
+    /*Establece el tamaño del texto en 16 pixeles*/
+    font-size: 16px;
+}
+
+ul li a{
+    /*Elimina la linea del hipervinculo*/
+    text-decoration: none;
+    /*Se cambia la fuente de letra a color blanco*/
+    color: beige;
+    /*Define el Arial como primera opcion de fuente y las otras como alternativas*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Coloca el texto de los enlaces en negrita*/
+    font-weight: bold;
+    /*Da un chance de 3 segundos para que los cambios visuales ocurran*/
+    transition: .3s ease;
+}
+
+ul li a:hover{
+    /*Cambia el texto de enlace a color rojo*/
+    color: orangered;
+}
+
+.search-box{
+    /*Desplaza la caja de busqueda hacia el lado derecho*/
+    float: right;
+    /*Establece el ancho de la caja en 240 pixeles*/
+    width: 240px;
+    /*Establece la altura de la caja 30 pixeles*/
+    height: 30px;
+    background-color: beige;
+    /*Agrega 8 pixeles al espacio interno*/
+    padding: 8px;
+    /*Redondea las esquinas de la caja de busqueda */
+    border-radius: 15px;
+    /*Separacion externa en la parte superior*/
+    margin-top: 1%;
+    /*Separacion externa en la parte derecha*/
+    margin-right: 2%;
+}
+
+.search-box .search-txt{
+    /* Establece el ancho del campo de busqueda en 190 pixeles*/
+    width: 190px;
+    /* No agrega espacio arriba/abajo y agrega 6 pixeles a izquierda/derecha*/
+    padding: 0 6px;
+}
+
+.search-btn {
+    /*Elimina el subrayado del enlace*/
+    text-decoration: none;
+    /*establece un fondo blanco*/
+    background-color: aliceblue;
+    /*Establece el icono color negro*/
+    color: black;
+    /*Activa el flexbox hacia la derecha*/
+    display: flex;
+    /*Dezplaza el boton hacia la derecha*/
+    float: right ;
+    /*Centra horizontalmente el contenido segun el eje principal del flexbox*/
+    justify-content: center;
+    /*establece ancho 30 pixeles*/
+    width: 30px;
+    /*establece altura 30 pixeles*/
+    height: 30px;
+}
+
+.search-txt{
+    /* Elimina el borde predeterminado del campo de texto*/
+    border: none;
+    /* Elimina el fondo propio del campo para utilizar el contenedor*/
+    background: none;
+    /*Elimina el contorno predeterminado del campo*/
+    outline: none;
+    /*Dezplaza el campo de texto hacia la izquierda*/
+    float: left;
+    /*establece el texto escrito por el usuario*/
+    color: aqua;
+    /*Establece el tamaño del texto a 16 pixeles*/
+    font-size: 16px;
+    /*Establece una altura de linea de 30 pixeles*/
+    line-height: 30px;
+    /*Agrega una separacion de 6 pixeles en cada letra*/
+    letter-spacing: .6px;
+}
+
+.title{
+    /*Permite posicionar el elemento mediante coordenadas top, left, right, bottom*/
+    position: absolute;
+    /*Coloca el punto de referencia del titulo al 40%*/
+    top:40%;
+    /*Coloca el punto de referencia del titulo al 50% */
+    left:50%;
+    /*Mueve el elemento la mitad de ancho y alto para centrarlo*/
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    /*Cambia el color del titulo a blanco*/
+    color: #fff;
+    /*Establece un tamaño grande de 85 pixeles*/
+    font-size: 85px;
+    /*Aplica una tipografia al titulo*/
+    font-family: cursive;
+    /*Muestra el cursor en forma de mano*/
+    cursor: pointer;
+}
+
+.button{
+    /* Permite posicionar el elemento mediante coordenadas top, left */
+    position: absolute;
+    /* Coloca el punto de referencia del titulo al 40% desde la parte superior */
+    top: 51%;
+    /* Coloca el punto de referencia del titulo al 50% desde el lado izquierdo */
+    left: 50%;
+    /* Mueve el elemento la mitad de su propio ancho y alto para centrar */
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    background: white;
+    color: #000;
+}

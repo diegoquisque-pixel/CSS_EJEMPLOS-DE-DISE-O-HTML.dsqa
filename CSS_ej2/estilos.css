@@ -1,0 +1,68 @@
+/* Prof. Christian ---- HTML y CSS */
+/* Estilo general del cuerpo de la página */
+body {
+    margin: 0;              /* Sin margen */
+    height: 100vh;          /* Alto de la ventana */
+    background: #1a1a1a;    /* Fondo oscuro */
+    display: flex;          /* Usa Flexbox */
+    justify-content: center;/* Centra horizontalmente */
+    align-items: flex-start;/* Alinea arriba */
+    padding-top: 50px;      /* Espacio superior */
+}
+
+/* Cable de la luz */
+.wire {
+    position: absolute;     /* Posición absoluta */
+    top: 40px;              /* Distancia desde arriba */
+    width: 80%;             /* Ancho del cable */
+    height: 2px;            /* Grosor del cable */
+    background: #333;       /* Color del cable */
+}
+
+/* Contenedor de las bombillas */
+.string {
+    display: flex;          /* Coloca las bombillas en fila */
+    gap: 30px;              /* Espacio entre bombillas */
+    z-index: 2;             /* Se muestra por encima */
+}
+
+/* Estilo base de cada bombilla */
+.bulb {
+    width: 20px;            /* Ancho de la bombilla */
+    height: 30px;           /* Alto de la bombilla */
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    /* Forma redondeada */
+    position: relative;     /* Posición relativa */
+}
+
+/* Parte superior de la bombilla */
+.bulb::before {
+    content: '';            /* Crea un pequeño rectángulo */
+    position: absolute;     /* Posición absoluta */
+    top: -5px;              /* Se coloca encima */
+    left: 5px;              /* Alineación horizontal */
+    width: 10px;            /* Ancho del conector */
+    height: 8px;            /* Alto del conector */
+    background: #444;       /* Color del conector */
+}
+
+/* Colores de las bombillas con brillo */
+.red {
+    background: #ff3333;        /* Color rojo */
+    box-shadow: 0 0 15px #ff3333; /* Efecto de luz */
+}
+
+.green {
+    background: #33ff33;        /* Color verde */
+    box-shadow: 0 0 15px #33ff33;
+}
+
+.blue {
+    background: #3333ff;        /* Color azul */
+    box-shadow: 0 0 15px #3333ff;
+}
+
+.yellow {
+    background: #ffff33;        /* Color amarillo */
+    box-shadow: 0 0 15px #ffff33;
+}

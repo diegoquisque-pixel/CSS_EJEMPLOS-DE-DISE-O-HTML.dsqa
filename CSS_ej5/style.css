@@ -1,0 +1,75 @@
+/* DSQA */
+/* Proyecto: Login de Citas con HTML y CSS */
+/* Archivo: style.css (diseño y apariencia de la página) */
+
+
+/* ========== ESTILOS GENERALES DEL CUERPO DE LA PÁGINA ========== */
+body {
+    margin: 0;                   /* Elimina márgenes predeterminados */
+    height: 100vh;               /* Alto de la ventana completa */
+    display: flex;               /* Usa Flexbox para centrar */
+    justify-content: center;     /* Centra horizontalmente */
+    align-items: center;         /* Centra verticalmente */
+    font-family: sans-serif;     /* Tipo de letra sin serifas */
+    background: #ffe6ea;         /* Color de fondo rosa claro */
+}
+
+
+/* ========== ESTILO DE LA TARJETA ========== */
+.card {
+    width: 300px;                           /* Ancho de la tarjeta */
+    padding: 40px;                          /* Espacio interno */
+    border-radius: 20px;                    /* Bordes redondeados */
+    background: white;                      /* Color de fondo blanco */
+    text-align: center;                     /* Centra el contenido */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+
+/* ========== ESTILO DEL TÍTULO H2 ========== */
+h2 {
+    color: #ff4b6e;             /* Color del texto rosa */
+    margin-bottom: 20px;        /* Espacio inferior */
+    display: inline-block;      /* Se comporta como bloque en línea */
+    position: relative;         /* Permite posicionar el pseudo-elemento dentro de él */
+    padding-left: 25px;         /* Espacio a la izquierda para el ícono */
+}
+
+
+/* ========== PSEUDO-ELEMENTO QUE CREA EL ÍCONO (ROMBO) ========== */
+h2::before {
+    content: '';                        /* Elemento vacío */
+    position: absolute;                 /* Posición absoluta respecto al h2 */
+    left: 0;                            /* Se coloca a la izquierda */
+    top: 2px;                           /* Ajuste vertical del ícono */
+    width: 14px;                        /* Ancho del rombo */
+    height: 14px;                       /* Alto del rombo */
+    background: #ff4b6e;                /* Color del rombo */
+    transform: rotate(-45deg);          /* Rota el cuadrado para formar un rombo */
+    box-shadow: -1px -1px 0 #ff4b6e;    /* Borde suave */
+    border-radius: 2px;                 /* Ligero redondeado */
+}
+
+
+/* ========== ESTILO DE LOS CAMPOS DE TEXTO ========== */
+input {
+    width: 100%;                /* Ancho completo */
+    padding: 12px;              /* Espacio interno */
+    margin-bottom: 15px;        /* Espacio inferior entre campos */
+    border: 1px solid #ddd;     /* Borde gris claro */
+    border-radius: 8px;         /* Bordes redondeados */
+    box-sizing: border-box;     /* Incluye el padding en el ancho total */
+}
+
+
+/* ========== ESTILO DEL BOTÓN ========== */
+button {
+    width: 100%;                /* Ancho completo */
+    padding: 12px;              /* Espacio interno */
+    border: none;               /* Sin borde */
+    border-radius: 8px;         /* Bordes redondeados */
+    background: #ff4b6e;        /* Color del botón rosa */
+    color: white;               /* Color del texto */
+    font-weight: bold;          /* Texto en negrita */
+    cursor: pointer;            /* Cursor de mano al pasar el mouse */
+}

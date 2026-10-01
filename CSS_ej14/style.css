@@ -1,0 +1,65 @@
+/* DSQA - Estilos Suscripción | Autor: DSQA | 2026 */
+
+/* Body: Centra la tarjeta en pantalla con fondo oscuro */
+body {
+  display: flex;                /* Activa Flexbox */
+  justify-content: center;      /* Centrado horizontal */
+  align-items: center;          /* Centrado vertical */
+  height: 100vh;                /* Altura completa de ventana */
+  background: #121212;          /* Fondo muy oscuro */
+  margin: 0;                    /* Sin márgenes externos */
+}
+
+/* .subscribe-card: Tarjeta contenedora oscura */
+.subscribe-card {
+  background: #1e1e1e;          /* Gris oscuro para la tarjeta */
+  padding: 30px;                /* Espaciado interno */
+  border-radius: 15px;          /* Bordes redondeados */
+  text-align: center;           /* Texto centrado */
+  width: 300px;                 /* Ancho fijo */
+  border: 1px solid #333;       /* Borde sutil gris */
+  box-shadow: 0 1px 20px rgba(0,0,0,0.3); /* Sombra suave */
+}
+
+/* h2: Título principal */
+h2 {
+  color: #fff;                  /* Blanco puro */
+  font-size: 24px;              /* Tamaño grande */
+  margin-bottom: 10px;          /* Espacio abajo */
+}
+
+/* p: Texto secundario */
+p {
+  color: #aaa;                  /* Gris claro */
+  font-size: 14px;              /* Tamaño pequeño */
+  margin-bottom: 20px;          /* Espacio antes del input */
+}
+
+/* input: Campo de correo */
+input {
+  width: 100%;                  /* Ocupa todo el ancho */
+  padding: 12px;                /* Espaciado interno */
+  margin-bottom: 15px;          /* Espacio antes del botón */
+  background: #2a2a2a;          /* Fondo más oscuro que la tarjeta */
+  border: none;                 /* Sin bordes */
+  border-radius: 5px;           /* Bordes ligeramente redondeados */
+  color: white;                 /* Texto blanco */
+  box-sizing: border-box;       /* El padding no aumenta el ancho total */
+}
+
+/* button: Botón verde llamativo */
+button {
+  width: 100%;                  /* Ocupa todo el ancho */
+  padding: 12px;                /* Espaciado interno */
+  background: #22c55e;          /* Verde vibrante */
+  color: white;                 /* Texto blanco */
+  border: none;                 /* Sin bordes */
+  border-radius: 5px;           /* Bordes redondeados */
+  font-weight: bold;            /* Texto en negrita */
+  cursor: pointer;              /* Cursor de mano al pasar */
+}
+
+/* Efecto hover: Oscurece el botón al pasar el mouse */
+button:hover {
+  background: #16a34a;          /* Verde más oscuro */
+}

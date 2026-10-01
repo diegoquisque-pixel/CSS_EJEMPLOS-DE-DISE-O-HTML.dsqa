@@ -1,0 +1,80 @@
+/* DSQA - HTML & CSS */
+
+/* Estilos generales de la página */
+body {
+    margin: 0;
+    height: 100vh;             /* Altura completa de la ventana */
+    display: flex;             /* Usa Flexbox para centrar */
+    justify-content: center;   /* Centra horizontalmente */
+    align-items: center;       /* Centra verticalmente */
+    background: #c3e6cb;       /* Color de fondo de la página (verde suave) */
+    font-family: 'Courier New', monospace; /* Fuente tipo máquina de escribir */
+}
+
+/* Estilo del contenedor principal del boleto */
+.ticket {
+    width: 300px;              /* Ancho del boleto */
+    background: #fff;          /* Fondo blanco */
+    border-radius: 10px;       /* Bordes redondeados */
+    overflow: hidden;          /* Oculta lo que sobresalga (importante para los círculos) */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Sombra */
+}
+
+/* Parte superior del boleto */
+.top {
+    background: #e74c3c;       /* Color rojo */
+    color: white;              /* Texto blanco */
+    padding: 20px;             /* Espaciado interno */
+    text-align: center;        /* Centra el texto */
+    position: relative;        /* Para posicionar los pseudo-elementos (círculos) */
+}
+
+/* Bordes decorativos de la parte superior (Los semicírculos blancos) */
+.top::before, .top::after {
+    content: '';               /* Crea un elemento vacío */
+    position: absolute;        /* Posición absoluta */
+    bottom: -10px;             /* Se coloca abajo */
+    width: 20px;               /* Ancho del círculo */
+    height: 20px;              /* Alto del círculo */
+    background: #c3e6cb;       /* Mismo color del fondo de la página */
+    border-radius: 50%;        /* Forma circular */
+}
+
+.top::before { left: -10px; }  /* Círculo izquierdo */
+.top::after { right: -10px; }  /* Círculo derecho */
+
+/* Estilo del título */
+h2 {
+    margin: 0;                 /* Sin margen */
+    font-size: 24px;           /* Tamaño del texto */
+    text-transform: uppercase; /* Convierte a mayúsculas */
+}
+
+/* Estilo del subtítulo */
+.movie-title {
+    font-size: 14px;           /* Tamaño del texto */
+    opacity: 0.9;              /* Ligeramente transparente */
+    margin-top: 5px;           /* Espacio superior */
+}
+
+/* Parte inferior del boleto */
+.bottom {
+    padding: 20px;             /* Espaciado interno */
+    display: flex;             /* Usa Flexbox */
+    justify-content: space-between; /* Separa los elementos */
+    border-top: 2px dashed #ccc; /* Línea punteada */
+}
+
+/* Estilo de las etiquetas (DATE, TIME, SEAT) */
+.info div {
+    font-size: 12px;           /* Tamaño del texto */
+    color: #7f8c8d;            /* Color gris */
+    margin-bottom: 5px;        /* Espacio inferior */
+}
+
+/* Estilo de los valores (SEP 28, 20:00, A12) */
+.info span {
+    font-size: 16px;           /* Tamaño del texto */
+    font-weight: bold;         /* Texto en negrita */
+    color: #2c3e50;            /* Color oscuro */
+}

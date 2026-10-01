@@ -1,0 +1,80 @@
+/* DSQA - Estilos Business Card | Autor: DSQA | 2026 */
+
+/* Body: Centra la tarjeta en pantalla */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Fuente moderna */
+  background-color: #f0f2f5;           /* Fondo gris claro */
+  display: flex;                       /* Flexbox */
+  justify-content: center;             /* Centrado horizontal */
+  align-items: center;                 /* Centrado vertical */
+  height: 100vh;                       /* Altura completa */
+  margin: 0;                           /* Sin márgenes */
+}
+
+/* .card: Contenedor principal blanco */
+.card {
+  width: 400px;                        /* Ancho fijo */
+  height: 230px;                       /* Alto fijo */
+  background: white;                   /* Fondo blanco */
+  border-radius: 15px;                 /* Bordes redondeados */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
+  display: flex;                       /* Divide en izquierda/derecha */
+  overflow: hidden;                    /* Recorta bordes hijos */
+}
+
+/* .left: Sección oscura de la foto */
+.left {
+  width: 35%;                          /* Ocupa 35% del ancho */
+  background: #2c3e50;                 /* Azul oscuro */
+  display: flex;                       /* Para centrar el círculo */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* .photo: Círculo placeholder para la imagen */
+.photo {
+  width: 80px;                         /* Tamaño del círculo */
+  height: 80px;
+  background-color: #ddd;              /* Gris claro (placeholder) */
+  border-radius: 50%;                  /* Forma circular */
+  border: 3px solid white;             /* Borde blanco */
+}
+
+/* .right: Sección de información */
+.right {
+  width: 65%;                          /* Ocupa el resto del ancho */
+  padding: 30px;                       /* Espaciado interno */
+  display: flex;                       /* Organiza texto en columna */
+  flex-direction: column;
+  justify-content: center;             /* Centra todo verticalmente */
+}
+
+/* h2: Nombre */
+h2 { 
+  margin: 0; 
+  color: #333; 
+  font-size: 22px; 
+}
+
+/* .title: Cargo profesional */
+.title {
+  margin: 5px 0 20px 0;                /* Espacio abajo separado */
+  color: #78c0d0;                      /* Color azul claro */
+  font-size: 14px;
+  text-transform: uppercase;           /* Mayúsculas */
+  letter-spacing: 1px;                 /* Espaciado entre letras */
+}
+
+/* .info: Contenedor de datos de contacto */
+.info {
+  font-size: 13px;                     /* Texto pequeño */
+  color: #555;                         /* Gris oscuro */
+  line-height: 1.6;                    /* Espacio entre líneas */
+}
+
+/* Separación entre cada dato de contacto */
+.info div { 
+  margin-bottom: 5px; 
+}

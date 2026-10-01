@@ -1,0 +1,39 @@
+/* DSQA */
+/* Proyecto: Colores con HTML y CSS */
+/* Archivo: style.css (diseño y apariencia de la página) */
+
+
+/* ========== ESTILOS GENERALES DEL CUERPO DE LA PÁGINA ========== */
+body {
+    background: #333;            /* Color de fondo gris oscuro */
+    padding: 20px;               /* Espacio interno alrededor */
+    display: flex;               /* Usa Flexbox */
+    justify-content: center;     /* Centra horizontalmente */
+    align-items: center;         /* Centra verticalmente */
+    height: 100vh;               /* Altura de toda la ventana */
+    margin: 0;                   /* Sin margen */
+}
+
+
+/* ========== ESTILO DE LOS CUADROS (CAJAS) ========== */
+.box {
+    width: 100px;                /* Ancho del cuadro */
+    height: 50px;                /* Alto del cuadro */
+    margin: 10px;                /* Margen entre cuadros */
+    color: white;                /* Color del texto */
+    display: flex;               /* Usa Flexbox */
+    align-items: center;         /* Centra verticalmente el texto */
+    justify-content: center;     /* Centra horizontalmente el texto */
+}
+
+
+/* ========== CUADRO ROJO SÓLIDO USANDO rgb() ========== */
+.solid {
+    background-color: rgb(255, 0, 0);       /* Rojo totalmente opaco */
+}
+
+
+/* ========== CUADRO ROJO TRANSPARENTE USANDO rgba() ========== */
+.trans {
+    background-color: rgba(255, 0, 0, 0.5); /* Rojo con 50% de opacidad */
+}
